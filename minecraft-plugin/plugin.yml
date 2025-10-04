@@ -1,0 +1,30 @@
+name: DiscordIntegration
+version: 1.0.0
+main: com.yourserver.discordintegration.DiscordIntegration
+api-version: 1.21
+author: YourName
+description: Discord-Minecraft account linking system
+website: https://github.com/yourname/discord-integration
+folia-supported: true
+
+commands:
+  link:
+    description: Link your Minecraft account to Discord
+    usage: /link <your_discord_username>
+    aliases: [discordlink]
+  unlink:
+    description: Unlink your Minecraft account from Discord
+    usage: /unlink
+    aliases: [discordunlink]
+  linked:
+    description: Check if your account is linked to Discord
+    usage: /linked
+    aliases: [linkstatus, checklink]
+
+permissions:
+  discordintegration.use:
+    description: Allows use of link commands
+    default: true
+  discordintegration.admin:
+    description: Allows admin commands and bypass linking requirements
+    default: op

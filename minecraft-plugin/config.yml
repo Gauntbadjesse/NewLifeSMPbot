@@ -1,0 +1,20 @@
+# Discord Integration Configuration
+
+# Discord webhook URL for sending link notifications from Minecraft to Discord
+# Get this from your Discord server settings -> Integrations -> Webhooks
+webhook-url: "https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN"
+
+# Bot API settings (optional - for advanced integration)
+bot-api-url: "http://localhost:8080"
+
+# Linking settings
+require-linking: true          # Kick players who don't link after X minutes
+link-timeout-minutes: 10       # How long players have to link before being kicked
+link-reminder-minutes: 5       # When to remind players to link
+
+# Messages
+messages:
+  link-required: "§c⚠️ You must link your Discord account to play on this server!"
+  link-instructions: "§eUse §f/link <your_discord_username> §eto get started."
+  link-timeout-warning: "§cYou will be kicked in %d minutes if you don't link your account!"
+  link-success: "§a✅ Account successfully linked! Welcome to the server!"
